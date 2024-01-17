@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677,#4e085f);
+    padding:10px;
+}
+.todo-app{
+    /* always gives margin and padding first then center the elements, after u provide padding then its out of shape*/
+    width: 100%;
+    max-width: 540px;
+    background-color: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    /*some times your margin bottom was not working because in that image was bigger is size make sure to do that image small, see the below*/
+    margin-bottom: 20px;
+}
+.todo-app h2 img{
+    width: 30px;
+    margin-left: 10px;
+
+}
+.row{
+    background-color: #edeef0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left:10px;
+    margin-bottom: 25px;
+
+}
+.row input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    font-weight: 14px;
+    background: transparent;
+}
+.row button{
+    padding: 16px 50px;
+    border-style: none;
+    border-radius: 40px;
+    background-color:#ff5945;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 25px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-image: url('images/unchecked.png');
+    background-position: center;
+    background-size: cover;
+    top:8px;
+    left:-10px;
+}
+/*note this will not work ul li .checked{*/
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url('images/checked.png');
+}
+ul li span{
+    position: absolute;
+    top:5px ;
+    right:0px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    color:#555
+}
+ul li span:hover{
+background-color: #edeef0;
+}
