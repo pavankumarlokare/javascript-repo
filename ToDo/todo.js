@@ -19,6 +19,7 @@ function Addtask(){
         li.appendChild(span)
     }
      // //after adding inputbox should be empty
+     // //after adding inputbox should be empty
     inputBox.value='';
     saveData();
 }
