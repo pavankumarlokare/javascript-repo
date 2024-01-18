@@ -14,12 +14,15 @@ function Addtask(){
         
 
         // here i am creating one span element directly in js then adding delete image code into that,then appending/adding where u wants to
+        // here i am creating one span element directly in js then adding delete image code into that,then appending/adding where u wants to
         let span=document.createElement("span");
         span.innerHTML="\u00d7";
         li.appendChild(span)
     }
-     // //after adding inputbox should be empty
-     // //after adding inputbox should be empty
+        //after adding inputbox should be empty
+        //after adding inputbox should be empty
+        //after adding inputbox should be empty
+        
     inputBox.value='';
     saveData();
 }
