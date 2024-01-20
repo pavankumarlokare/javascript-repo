@@ -5,7 +5,7 @@ function Addtask(){
         alert("you must write something!")
     }
     else{
-        //creating html element of li
+        //creating html element of li inside of un order list
         let li=document.createElement("li")
         // passing that input values into that li
         li.innerHTML=inputBox.value
