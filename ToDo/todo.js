@@ -5,9 +5,9 @@ function Addtask(){
         alert("you must write something!")
     }
     else{
-        //creating html element of li inside of un order list
+        //creating html element of li inside of un order list 
         let li=document.createElement("li")
-        // passing that input values into that li
+        // passing that input values into that li using Js
         li.innerHTML=inputBox.value
         //adding that html element where you exactly wants
         listContainer.appendChild(li)
